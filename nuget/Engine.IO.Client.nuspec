@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Engine.IO.Client</id>
+        <version>0.5.1.0</version>
+        <title>Engine.IO Client</title>
+        <authors>.NET Development Addict</authors>
+        <licenseUrl>https://raw.githubusercontent.com/mattleibow/Socket.IO.Client/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/mattleibow/Socket.IO.Client</projectUrl>
+        <iconUrl>https://raw.githubusercontent.com/mattleibow/Socket.IO.Client/master/icons/engineio_256x256.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>The Engine.IO Client Library</description>
+        <summary>The Engine.IO Client Library.</summary>
+        <releaseNotes></releaseNotes>
+        <copyright>Automattic</copyright>
+        <tags></tags>
+        <dependencies>
+            <dependency id="Square.OkIO" version="1.5.0" />
+            <dependency id="Square.OkHttp" version="2.4.0" />
+            <dependency id="Square.OkHttp.WS" version="2.4.0" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\README.md" target="README.md" />
+        <file src="..\LICENSE" target="LICENSE" />
+        
+        <file src="..\binding\Engine.IO-Client.Java\bin\Release\Engine.IO.Client.dll" target="lib\MonoAndroid\Engine.IO.Client.dll" />
+    </files>
+</package>

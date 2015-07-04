@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socket.IO-Client.Java", "..\binding\Socket.IO-Client.Java\Socket.IO-Client.Java.csproj", "{3EA4A0D4-5BDA-4A12-A675-1B13286C7E82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine.IO-Client.Java", "..\binding\Engine.IO-Client.Java\Engine.IO-Client.Java.csproj", "{5DD4803E-26C2-42FD-A66D-539658BAEFF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketIOClientJavaSample", "SocketIOClientJavaSample\SocketIOClientJavaSample.csproj", "{66EBB8BB-4DB2-41D7-BBF4-665F3C8777FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EA4A0D4-5BDA-4A12-A675-1B13286C7E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA4A0D4-5BDA-4A12-A675-1B13286C7E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA4A0D4-5BDA-4A12-A675-1B13286C7E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA4A0D4-5BDA-4A12-A675-1B13286C7E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DD4803E-26C2-42FD-A66D-539658BAEFF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DD4803E-26C2-42FD-A66D-539658BAEFF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DD4803E-26C2-42FD-A66D-539658BAEFF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DD4803E-26C2-42FD-A66D-539658BAEFF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66EBB8BB-4DB2-41D7-BBF4-665F3C8777FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66EBB8BB-4DB2-41D7-BBF4-665F3C8777FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66EBB8BB-4DB2-41D7-BBF4-665F3C8777FF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{66EBB8BB-4DB2-41D7-BBF4-665F3C8777FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66EBB8BB-4DB2-41D7-BBF4-665F3C8777FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66EBB8BB-4DB2-41D7-BBF4-665F3C8777FF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

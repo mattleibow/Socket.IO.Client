@@ -21,6 +21,7 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
+Resource.Designer.cs
 
 # Visual Studo 2015 cache/options directory
 .vs/
@@ -142,6 +143,9 @@ publish/
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/packages/repositories.config
+
+# Xamarin Component Packages
+*.xam
 
 # Windows Azure Build Output
 csx/

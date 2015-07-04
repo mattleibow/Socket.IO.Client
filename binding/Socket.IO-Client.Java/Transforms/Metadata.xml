@@ -1,0 +1,24 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <attr path="/api/package[@name='com.github.nkzawa.backo']" name="managedName">SocketIO</attr>
+  <attr path="/api/package[@name='com.github.nkzawa.hasbinary']" name="managedName">SocketIO</attr>
+  <attr path="/api/package[@name='com.github.nkzawa.socketio.client']" name="managedName">SocketIO.Client</attr>
+  <attr path="/api/package[@name='com.github.nkzawa.socketio.parser']" name="managedName">SocketIO.Parser</attr>
+
+  <remove-node path="/api/package[@name='com.github.nkzawa.socketio.client']/class[@name='Manager.Engine']" />
+  <remove-node path="/api/package[@name='com.github.nkzawa.socketio.parser']/class[@name='Parser.BinaryReconstructor']" />
+  
+  <attr path="/api/package[@name='com.github.nkzawa.socketio.client']/class[@name='Manager.ReadyState']" name="managedName">ManagerReadyState</attr>
+
+  <attr path="/api/package[@name='com.github.nkzawa.socketio.client']/class[@name='Socket']/method[@name='connected']" name="managedName">IsConnected</attr>
+  <attr path="/api/package[@name='com.github.nkzawa.socketio.client']/class[@name='Socket']/method[@name='id']" name="managedName">GetId</attr>
+  <attr path="/api/package[@name='com.github.nkzawa.socketio.client']/class[@name='Socket']/method[@name='io']" name="managedName">GetManager</attr>
+
+</metadata>

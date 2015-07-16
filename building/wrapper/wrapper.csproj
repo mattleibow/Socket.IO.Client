@@ -6,7 +6,7 @@
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{8D7FA25B-BEED-48A2-BD91-C4EF61DEACCC}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>wrapper</RootNamespace>
+    <RootNamespace>SocketIO</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>wrapper</AssemblyName>
   </PropertyGroup>
@@ -41,21 +41,33 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="src\_event.cs" />
-    <Compile Include="src\array_message.cs" />
-    <Compile Include="src\binary_message.cs" />
-    <Compile Include="src\client.cs" />
-    <Compile Include="src\double_message.cs" />
-    <Compile Include="src\int_message.cs" />
-    <Compile Include="src\message.cs" />
-    <Compile Include="src\MessageMap.cs" />
-    <Compile Include="src\MessageVector.cs" />
-    <Compile Include="src\object_message.cs" />
-    <Compile Include="src\sioclient.cs" />
-    <Compile Include="src\sioclientPINVOKE.cs" />
-    <Compile Include="src\socket.cs" />
-    <Compile Include="src\string_message.cs" />
-    <Compile Include="src\StringMap.cs" />
     <Compile Include="Delegates.cs" />
+    <Compile Include="LinkerFlags.cs" />
+    <Compile Include="src\ArrayMessage.cs" />
+    <Compile Include="src\Client.cs" />
+    <Compile Include="src\DoubleMessage.cs" />
+    <Compile Include="src\IntMessage.cs" />
+    <Compile Include="src\Message.cs" />
+    <Compile Include="src\ObjectMessage.cs" />
+    <Compile Include="src\Socket.cs" />
+    <Compile Include="src\SocketEvent.cs" />
+    <Compile Include="src\StringMessage.cs" />
+    <Compile Include="src\sioclientPINVOKE.cs" />
+    <Compile Include="PartialClasses.cs" />
+    <Compile Include="src\MessageDictionary.cs" />
+    <Compile Include="src\MessageList.cs" />
+    <Compile Include="src\StringDictionary.cs" />
+    <Compile Include="ProxyDelegates.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\out\lib\libboost.a">
+      <Link>libboost.a</Link>
+    </BundleResource>
+    <BundleResource Include="..\out\lib\libsioclient.a">
+      <Link>libsioclient.a</Link>
+    </BundleResource>
+    <BundleResource Include="..\out\lib\libwrapper.a">
+      <Link>libwrapper.a</Link>
+    </BundleResource>
   </ItemGroup>
 </Project>

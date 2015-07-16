@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{051EB544-9B1B-4ECD-852F-7E05D949799A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>wrapper</RootNamespace>
+    <AssemblyName>wrapper</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="CppSharp.AST">
+      <HintPath>..\..\..\..\CppSharp\CppSharp\build\gmake\lib\Debug_x32\CppSharp.AST.dll</HintPath>
+    </Reference>
+    <Reference Include="CppSharp">
+      <HintPath>..\..\..\..\CppSharp\CppSharp\build\gmake\lib\Debug_x32\CppSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CppSharp.Generator">
+      <HintPath>..\..\..\..\CppSharp\CppSharp\build\gmake\lib\Debug_x32\CppSharp.Generator.dll</HintPath>
+    </Reference>
+    <Reference Include="CppSharp.Parser.CSharp">
+      <HintPath>..\..\..\..\CppSharp\CppSharp\build\gmake\lib\Debug_x32\CppSharp.Parser.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CppSharp.Runtime">
+      <HintPath>..\..\..\..\CppSharp\CppSharp\build\gmake\lib\Debug_x32\CppSharp.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="..\..\..\..\CppSharp\CppSharp\build\gmake\lib\Debug_x32\libCppSharp.CppParser.dylib">
+      <Link>libCppSharp.CppParser.dylib</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

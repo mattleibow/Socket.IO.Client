@@ -16,7 +16,7 @@ before_build:
 
 build:
   project: sample\SocketIOClientJavaSample.sln
-  verbosity: minimal
+  verbosity: normal
   
 after_build:
  - nuget pack nuget\Engine.IO.Client.nuspec

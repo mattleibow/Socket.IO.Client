@@ -29,5 +29,5 @@ artifacts:
  - path: binding\Engine.IO-Client.Java\bin\$(configuration)\
  - path: binding\Socket.IO-Client.Java\bin\$(configuration)\
  
- on_finish:
-  - appveyor UnregisterXamarinLicense -Email %XamarinEmail% -Password %XamarinPassword%
+on_finish:
+ - appveyor UnregisterXamarinLicense -Email %XamarinEmail% -Password %XamarinPassword%

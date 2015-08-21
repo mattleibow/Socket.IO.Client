@@ -9,7 +9,7 @@
 
   <attr path="/api/package[@name='com.github.nkzawa.engineio.client']" name="managedName">EngineIO.Client</attr>
   <attr path="/api/package[@name='com.github.nkzawa.engineio.client.transports']" name="managedName">EngineIO.Client.Transports</attr>
-  <attr path="/api/package[@name='com.github.nkzawa.engineio.parser']" name="managedName">EngineIO.Parser</attr>
+  <attr path="/api/package[@name='com.github.nkzawa.engineio.parser']" name="managedName">EngineIO.Parsers</attr>
   <attr path="/api/package[@name='com.github.nkzawa.emitter']" name="managedName">EngineIO</attr>
   <attr path="/api/package[@name='com.github.nkzawa.global']" name="managedName">EngineIO</attr>
   <attr path="/api/package[@name='com.github.nkzawa.parseqs']" name="managedName">EngineIO</attr>

@@ -1,10 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{3EA4A0D4-5BDA-4A12-A675-1B13286C7E82}</ProjectGuid>
     <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -34,20 +32,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
-    <Reference Include="Square.OkHttp, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Square.OkHttp.2.4.0.2\lib\MonoAndroid\Square.OkHttp.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Square.OkHttp.WS, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Square.OkHttp.WS">
       <HintPath>..\packages\Square.OkHttp.WS.2.4.0.0\lib\MonoAndroid\Square.OkHttp.WS.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Square.OkIO, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Square.OkIO">
       <HintPath>..\packages\Square.OkIO.1.5.0.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="Square.OkHttp">
+      <HintPath>..\..\sample\packages\Square.OkHttp.2.4.0.3\lib\MonoAndroid\Square.OkHttp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -58,14 +55,14 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\socket.io-client-0.5.2.jar" />
+    <EmbeddedJar Include="Jars\socket.io-client-0.6.0.jar" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine.IO-Client.Java\Engine.IO-Client.Java.csproj">
-      <Project>{5dd4803e-26c2-42fd-a66d-539658baeff4}</Project>
+      <Project>{5DD4803E-26C2-42FD-A66D-539658BAEFF4}</Project>
       <Name>Engine.IO-Client.Java</Name>
     </ProjectReference>
   </ItemGroup>

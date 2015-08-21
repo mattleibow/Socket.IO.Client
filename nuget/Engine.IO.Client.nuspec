@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Engine.IO.Client</id>
-        <version>0.5.1.0</version>
+        <version>0.6.0.0</version>
         <title>Engine.IO Client</title>
         <authors>.NET Development Addict</authors>
         <licenseUrl>https://raw.githubusercontent.com/mattleibow/Socket.IO.Client/master/LICENSE</licenseUrl>

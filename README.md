@@ -24,7 +24,7 @@ socket.On (Socket.EventConnect, (data) => {
 });
 ```
 
-## Anothe Event
+## Another Events
 ```
 socket.On ("new message", (data) => {
     Log.Debug(TAG, data.ToString());

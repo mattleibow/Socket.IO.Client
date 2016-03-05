@@ -19,16 +19,15 @@ socket = IO.Socket ("http://chat.peruzal.co.za");
 ### Subscribe to Events
 ```
 socket.On (Socket.EventConnect, (data) => {
-				Log.Debug(TAG, "Connected");
-				socket.Emit("add user", "Xamarin Android");
-			});
-			
+    Log.Debug(TAG, "Connected");
+    socket.Emit("add user", "Xamarin Android");
+});
 ```
 
 ## Anothe Event
 ```
 socket.On ("new message", (data) => {
-	Log.Debug(TAG, data.ToString());
+    Log.Debug(TAG, data.ToString());
 });
 ```
 

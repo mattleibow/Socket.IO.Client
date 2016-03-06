@@ -2,32 +2,17 @@ version: '{build}'
 os: Visual Studio 2015
 configuration: Release
 platform: Any CPU
-environment:
-  XamarinEmail:
-    secure: +SUXZSPLHwp39+Yh09d2xxVGsEgHtlSD4NT1Og5h3sg=
-  XamarinPassword:
+
+xamarin:
+  email: matthew.leibowitz@xamarin.com
+  password:
     secure: Tvdf5rZl6IOCwZbvyj9B2w==
+  android: true
 
-before_build:
- - appveyor RegisterXamarinLicense -Email %XamarinEmail% -Password %XamarinPassword% -Product Android
- - cinst xamarin-component -version 0.99.0.194
- - nuget restore binding\Socket.IO-Client.sln
- - nuget restore sample\SocketIOClientJavaSample.sln
-
-build:
-  project: sample\SocketIOClientJavaSample.sln
-  verbosity: normal
+build_script:
+- ps: .\build.ps1
   
-after_build:
- - nuget pack nuget\Engine.IO.Client.nuspec
- - nuget pack nuget\Socket.IO.Client.nuspec
- - xamarin-component package component\socketio
-
 artifacts:
- - path: component\socketio\*.xam
- - path: nuget\*.nupkg
- - path: binding\Engine.IO-Client.Java\bin\$(configuration)\
- - path: binding\Socket.IO-Client.Java\bin\$(configuration)\
- 
-on_finish:
- - appveyor UnregisterXamarinLicense -Email %XamarinEmail% -Password %XamarinPassword%
+ - path: output
+ - path: output\*.nupkg
+ - path: output\*.xam

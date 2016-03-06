@@ -5,7 +5,7 @@ id: socketio
 publisher: Xamarin Inc
 publisher-url: http://xamarin.com
 summary: A realtime application framework (client) based on Socket.IO v1.x
-version: 0.6.0.0
+version: 0.6.1.0
 src-url: https://github.com/mattleibow/Socket.IO.Client
 
 details: Details.md
@@ -16,10 +16,15 @@ is_shell: true
 no_build: true
 packages:
   android: 
-    - Engine.IO.Client, Version=0.6.0.0
-    - Socket.IO.Client, Version=0.6.0.0
-local-nuget-repo: ../../
+    - Engine.IO.Client, Version=0.6.1.0
+    - Socket.IO.Client, Version=0.6.1.0
+local-nuget-repo: ../../output
 
+libraries:
+  android: 
+    - ../../output/Engine.IO.Client.dll
+    - ../../output/Socket.IO.Client.dll
+    
 icons: 
   - ../../icons/socketio_128x128.png
   - ../../icons/socketio_512x512.png
@@ -31,7 +36,7 @@ samples:
       - Engine.IO-Client.Java
       - Socket.IO-Client.Java
     installNuGets:
-      - project: OkHttpSample
+      - project: SocketIOClientJavaSample
         packages:
          - Engine.IO.Client
          - Socket.IO.Client

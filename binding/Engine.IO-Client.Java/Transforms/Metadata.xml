@@ -7,22 +7,22 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
 
-  <attr path="/api/package[@name='com.github.nkzawa.engineio.client']" name="managedName">EngineIO.Client</attr>
-  <attr path="/api/package[@name='com.github.nkzawa.engineio.client.transports']" name="managedName">EngineIO.Client.Transports</attr>
-  <attr path="/api/package[@name='com.github.nkzawa.engineio.parser']" name="managedName">EngineIO.Parsers</attr>
-  <attr path="/api/package[@name='com.github.nkzawa.emitter']" name="managedName">EngineIO</attr>
-  <attr path="/api/package[@name='com.github.nkzawa.global']" name="managedName">EngineIO</attr>
-  <attr path="/api/package[@name='com.github.nkzawa.parseqs']" name="managedName">EngineIO</attr>
-  <attr path="/api/package[@name='com.github.nkzawa.thread']" name="managedName">EngineIO</attr>
-  <attr path="/api/package[@name='com.github.nkzawa.utf8']" name="managedName">EngineIO</attr>
+  <attr path="/api/package[@name='io.socket.engineio.client']" name="managedName">EngineIO.Client</attr>
+  <attr path="/api/package[@name='io.socket.engineio.client.transports']" name="managedName">EngineIO.Client.Transports</attr>
+  <attr path="/api/package[@name='io.socket.engineio.parser']" name="managedName">EngineIO.Parsers</attr>
+  <attr path="/api/package[@name='io.socket.emitter']" name="managedName">EngineIO</attr>
+  <attr path="/api/package[@name='io.socket.global']" name="managedName">EngineIO</attr>
+  <attr path="/api/package[@name='io.socket.parseqs']" name="managedName">EngineIO</attr>
+  <attr path="/api/package[@name='io.socket.thread']" name="managedName">EngineIO</attr>
+  <attr path="/api/package[@name='io.socket.utf8']" name="managedName">EngineIO</attr>
 
-  <remove-node path="/api/package[@name='com.github.nkzawa.emitter']/class[@name='Emitter.OnceListener']" />
+  <remove-node path="/api/package[@name='io.socket.emitter']/class[@name='Emitter.OnceListener']" />
 
-  <attr path="/api/package[@name='com.github.nkzawa.engineio.client']/class[@name='Socket.ReadyState']" name="managedName">SocketReadyState</attr>
-  <attr path="/api/package[@name='com.github.nkzawa.engineio.client']/class[@name='Transport.ReadyState']" name="managedName">TransportReadyState</attr>
-  <attr path="/api/package[@name='com.github.nkzawa.engineio.client.transports']/class[@name='Polling']/field[@name='NAME']" name="managedName">TransportName</attr>
-  <attr path="/api/package[@name='com.github.nkzawa.engineio.client.transports']/class[@name='WebSocket']/field[@name='NAME']" name="managedName">TransportName</attr>
+  <attr path="/api/package[@name='io.socket.engineio.client']/class[@name='Socket.ReadyState']" name="managedName">SocketReadyState</attr>
+  <attr path="/api/package[@name='io.socket.engineio.client']/class[@name='Transport.ReadyState']" name="managedName">TransportReadyState</attr>
+  <attr path="/api/package[@name='io.socket.engineio.client.transports']/class[@name='Polling']/field[@name='NAME']" name="managedName">TransportName</attr>
+  <attr path="/api/package[@name='io.socket.engineio.client.transports']/class[@name='WebSocket']/field[@name='NAME']" name="managedName">TransportName</attr>
 
-  <attr path="/api/package[@name='com.github.nkzawa.emitter']/interface[@name='Emitter.Listener']/method[@name='call' and count(parameter)=1 and parameter[1][@type='java.lang.Object...']]" name="eventName"></attr>
+  <attr path="/api/package[@name='io.socket.emitter']/interface[@name='Emitter.Listener']/method[@name='call' and count(parameter)=1 and parameter[1][@type='java.lang.Object...']]" name="eventName"></attr>
 
 </metadata>

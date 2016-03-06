@@ -13,7 +13,7 @@ xamarin:
   android: true
 
 before_build:
- - cmd: echo y | %ANDROID_HOME%\tools\android.bat --silent update sdk --no-ui --all --filter android-10
+ - cmd: echo y | "%ANDROID_HOME%\tools\android.bat" --silent update sdk --no-ui --all --filter android-10
 build_script:
  - ps: .\build.ps1
   

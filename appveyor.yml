@@ -9,8 +9,10 @@ xamarin:
     secure: Tvdf5rZl6IOCwZbvyj9B2w==
   android: true
 
+before_build:
+ - cmd: echo y | %ANDROID_HOME%\tools\android.bat --silent update sdk --no-ui --all --filter android-10
 build_script:
-- ps: .\build.ps1
+ - ps: .\build.ps1
   
 artifacts:
  - path: output

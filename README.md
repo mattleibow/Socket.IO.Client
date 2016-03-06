@@ -1,4 +1,7 @@
 # Socket.IO Client
+
+[![Build status](https://ci.appveyor.com/api/projects/status/qh8lw8q3btg0ia7g/branch/master?svg=true)](https://ci.appveyor.com/project/mattleibow/socket-io-client/branch/master)
+
 Xamarin bindings for the Socket.IO Clients. Socket.IO for Xamarin
 
 # Example Usage

@@ -32,8 +32,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
-    <Reference Include="Square.OkHttp.WS">
-      <HintPath>..\..\sample\packages\Square.OkHttp.WS.2.7.2.0\lib\MonoAndroid\Square.OkHttp.WS.dll</HintPath>
+    <Reference Include="Square.OkHttp3.WS">
+      <HintPath>..\..\sample\packages\Square.OkHttp3.WS.3.1.2.0\lib\MonoAndroid\Square.OkHttp3.WS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Square.OkIO">
@@ -42,8 +42,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="Square.OkHttp">
-      <HintPath>..\..\sample\packages\Square.OkHttp.2.7.2.0\lib\MonoAndroid\Square.OkHttp.dll</HintPath>
+    <Reference Include="Square.OkHttp3">
+      <HintPath>..\..\sample\packages\Square.OkHttp3.3.1.2.0\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -56,7 +56,7 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\socket.io-client-0.6.3.jar" />
+    <EmbeddedJar Include="Jars\socket.io-client-0.7.0.jar" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

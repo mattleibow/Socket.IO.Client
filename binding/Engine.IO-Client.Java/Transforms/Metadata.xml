@@ -15,6 +15,7 @@
   <attr path="/api/package[@name='io.socket.parseqs']" name="managedName">EngineIO</attr>
   <attr path="/api/package[@name='io.socket.thread']" name="managedName">EngineIO</attr>
   <attr path="/api/package[@name='io.socket.utf8']" name="managedName">EngineIO</attr>
+  <attr path="/api/package[@name='io.socket.yeast']" name="managedName">EngineIO</attr>
 
   <remove-node path="/api/package[@name='io.socket.emitter']/class[@name='Emitter.OnceListener']" />
 

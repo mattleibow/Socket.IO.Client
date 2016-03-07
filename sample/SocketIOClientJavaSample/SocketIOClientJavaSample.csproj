@@ -57,7 +57,7 @@
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Square.OkHttp.WS">
-      <HintPath>..\packages\Square.OkHttp.WS.2.5.0.0\lib\MonoAndroid\Square.OkHttp.WS.dll</HintPath>
+      <HintPath>..\packages\Square.OkHttp.WS.2.7.2.0\lib\MonoAndroid\Square.OkHttp.WS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Square.OkIO">
@@ -71,7 +71,7 @@
       <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.22.2.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
     </Reference>
     <Reference Include="Square.OkHttp">
-      <HintPath>..\packages\Square.OkHttp.2.5.0.0\lib\MonoAndroid\Square.OkHttp.dll</HintPath>
+      <HintPath>..\packages\Square.OkHttp.2.7.2.0\lib\MonoAndroid\Square.OkHttp.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

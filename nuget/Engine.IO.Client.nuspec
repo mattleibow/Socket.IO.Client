@@ -2,15 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Engine.IO.Client</id>
-        <version>0.7.0.0</version>
-        <title>Engine.IO Client</title>
-        <authors>.NET Development Addict</authors>
+        <version>0.7.0.1</version>
+        <title>Engine.IO Client for Android</title>
+        <authors>Matthew Leibowitz</authors>
         <licenseUrl>https://raw.githubusercontent.com/mattleibow/Socket.IO.Client/master/LICENSE</licenseUrl>
         <projectUrl>https://github.com/mattleibow/Socket.IO.Client</projectUrl>
         <iconUrl>https://raw.githubusercontent.com/mattleibow/Socket.IO.Client/master/icons/engineio_256x256.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>The Engine.IO Client Library</description>
-        <summary>The Engine.IO Client Library.</summary>
+        <description>The Engine.IO Client Library for Android</description>
+        <summary>The Engine.IO Client Library for Android</summary>
         <releaseNotes></releaseNotes>
         <copyright>Automattic</copyright>
         <tags></tags>

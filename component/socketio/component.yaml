@@ -1,11 +1,11 @@
 %YAML 1.2
 ---
-name: Socket.IO Client
+name: Socket.IO Client for Android
 id: socketio
 publisher: Xamarin Inc
 publisher-url: http://xamarin.com
-summary: A realtime application framework (client) based on Socket.IO v1.x
-version: 0.7.0.0
+summary: A realtime application framework (client) based on Socket.IO v1.x for Android
+version: 0.7.0.1
 src-url: https://github.com/mattleibow/Socket.IO.Client
 
 details: Details.md
@@ -16,8 +16,8 @@ is_shell: true
 no_build: true
 packages:
   android: 
-    - Engine.IO.Client, Version=0.7.0.0
-    - Socket.IO.Client, Version=0.7.0.0
+    - Engine.IO.Client, Version=0.7.0.1
+    - Socket.IO.Client, Version=0.7.0.1
 local-nuget-repo: ../../output
 
 libraries:

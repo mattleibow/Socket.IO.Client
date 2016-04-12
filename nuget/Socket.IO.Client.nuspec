@@ -2,20 +2,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Socket.IO.Client</id>
-        <version>0.7.0.0</version>
-        <title>Socket.IO Client</title>
-        <authors>.NET Development Addict</authors>
+        <version>0.7.0.1</version>
+        <title>Socket.IO Client for Android</title>
+        <authors>Matthew Leibowitz</authors>
         <licenseUrl>https://raw.githubusercontent.com/mattleibow/Socket.IO.Client/master/LICENSE</licenseUrl>
         <projectUrl>https://github.com/mattleibow/Socket.IO.Client</projectUrl>
         <iconUrl>https://raw.githubusercontent.com/mattleibow/Socket.IO.Client/master/icons/socketio_256x256.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>A realtime application framework (client) based on Socket.IO v1.x</description>
-        <summary>A realtime application framework (client) based on Socket.IO v1.x.</summary>
+        <description>A realtime application framework (client) based on Socket.IO v1.x for Android</description>
+        <summary>A realtime application framework (client) based on Socket.IO v1.x. for Android</summary>
         <releaseNotes></releaseNotes>
         <copyright>Automattic</copyright>
         <tags></tags>
         <dependencies>
-            <dependency id="Engine.IO.Client" version="0.7.0" />
+            <dependency id="Engine.IO.Client" version="0.7.0.1" />
         </dependencies>
     </metadata>
     <files>

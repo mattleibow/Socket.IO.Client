@@ -59,7 +59,7 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\engine.io-client-0.8.1.jar" />
+    <EmbeddedJar Include="Jars\engine.io-client-0.8.2.jar" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

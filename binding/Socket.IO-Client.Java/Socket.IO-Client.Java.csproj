@@ -33,20 +33,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
-    <Reference Include="Square.OkHttp3.WS">
-      <HintPath>..\packages\Square.OkHttp3.WS.3.4.1.0\lib\MonoAndroid\Square.OkHttp3.WS.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Square.OkHttp3">
+      <HintPath>..\packages\Square.OkHttp3.3.5.0\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
     </Reference>
     <Reference Include="Square.OkIO">
-      <HintPath>..\..\sample\packages\Square.OkIO.1.6.0.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Square.OkIO.1.11.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="Square.OkHttp3">
-      <HintPath>..\packages\Square.OkHttp3.3.4.1.0\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -57,16 +51,16 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\socket.io-client-0.8.2.jar" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
+    <EmbeddedJar Include="Jars\socket.io-client-0.8.3.jar" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine.IO-Client.Java\Engine.IO-Client.Java.csproj">
       <Project>{5DD4803E-26C2-42FD-A66D-539658BAEFF4}</Project>
       <Name>Engine.IO-Client.Java</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

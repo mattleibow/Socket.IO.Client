@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Engine.IO.Client</id>
-        <version>0.8.2</version>
+        <version>0.8.3</version>
         <title>Engine.IO Client for Android</title>
         <authors>Matthew Leibowitz</authors>
         <licenseUrl>https://raw.githubusercontent.com/mattleibow/Socket.IO.Client/master/LICENSE</licenseUrl>
@@ -15,9 +15,8 @@
         <copyright>Automattic</copyright>
         <tags></tags>
         <dependencies>
-            <dependency id="Square.OkIO" version="1.6.0" />
-            <dependency id="Square.OkHttp3" version="3.4.1" />
-            <dependency id="Square.OkHttp3.WS" version="3.4.1" />
+            <dependency id="Square.OkIO" version="1.11.0" />
+            <dependency id="Square.OkHttp3" version="3.5.0" />
         </dependencies>
     </metadata>
     <files>

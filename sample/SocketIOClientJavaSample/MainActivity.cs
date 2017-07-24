@@ -43,7 +43,7 @@ namespace SocketIOClientJavaSample
                 socket.Close();
             }
 
-            socket = IO.Socket("http://chat.socket.io/");
+            socket = IO.Socket("https://socketio-chat.now.sh/");
             socket.Connect();
 
             // Tell the server your username

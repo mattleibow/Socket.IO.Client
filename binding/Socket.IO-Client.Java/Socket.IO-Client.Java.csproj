@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v2.3</TargetFrameworkVersion>
+    <AndroidClassParser>class-parse</AndroidClassParser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,7 +34,7 @@
   <ItemGroup>
     <Reference Include="Mono.Android" />
     <Reference Include="Square.OkHttp3.WS">
-      <HintPath>..\..\sample\packages\Square.OkHttp3.WS.3.1.2.0\lib\MonoAndroid\Square.OkHttp3.WS.dll</HintPath>
+      <HintPath>..\packages\Square.OkHttp3.WS.3.4.1.0\lib\MonoAndroid\Square.OkHttp3.WS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Square.OkIO">
@@ -43,7 +44,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Square.OkHttp3">
-      <HintPath>..\..\sample\packages\Square.OkHttp3.3.1.2.0\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
+      <HintPath>..\packages\Square.OkHttp3.3.4.1.0\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -56,7 +57,7 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\socket.io-client-0.7.0.jar" />
+    <EmbeddedJar Include="Jars\socket.io-client-0.8.0.jar" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -68,13 +69,6 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
-  <Import Project="..\packages\Xamarin.Android.Bindings.Generators.1.0.0.16\build\MonoAndroid\Xamarin.Android.Bindings.Generators.targets" Condition="Exists('..\packages\Xamarin.Android.Bindings.Generators.1.0.0.16\build\MonoAndroid\Xamarin.Android.Bindings.Generators.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Xamarin.Android.Bindings.Generators.1.0.0.16\build\MonoAndroid\Xamarin.Android.Bindings.Generators.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Android.Bindings.Generators.1.0.0.16\build\MonoAndroid\Xamarin.Android.Bindings.Generators.targets'))" />
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,16 +53,14 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+    <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Square.OkHttp3.WS">
-      <HintPath>..\packages\Square.OkHttp3.WS.3.1.2.0\lib\MonoAndroid\Square.OkHttp3.WS.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Square.OkHttp3.WS.3.4.1.0\lib\MonoAndroid\Square.OkHttp3.WS.dll</HintPath>
     </Reference>
     <Reference Include="Square.OkIO">
       <HintPath>..\packages\Square.OkIO.1.6.0.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v4">
       <HintPath>..\packages\Xamarin.Android.Support.v4.22.2.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
@@ -71,8 +69,7 @@
       <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.22.2.1.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
     </Reference>
     <Reference Include="Square.OkHttp3">
-      <HintPath>..\packages\Square.OkHttp3.3.1.2.0\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Square.OkHttp3.3.4.1.0\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -10,6 +10,8 @@
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
+var version = "0.9.0";
+
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
 //////////////////////////////////////////////////////////////////////
@@ -38,7 +40,17 @@ Task("RestorePackages")
     NuGetRestore("./sample/SocketIOClientJavaSample.sln");
 });
 
+Task("Externals")
+    .Does(() =>
+{
+    EnsureDirectoryExists("./externals");
+
+    DownloadFile(string.Format("http://search.maven.org/remotecontent?filepath=io/socket/socket.io-client/{0}/socket.io-client-{0}.jar", version), "./externals/socket.io-client.jar");
+    DownloadFile(string.Format("http://search.maven.org/remotecontent?filepath=io/socket/engine.io-client/{0}/engine.io-client-{0}.jar", version), "./externals/engine.io-client.jar");
+});
+
 Task("Build")
+    .IsDependentOn("Externals")
     .IsDependentOn("RestorePackages")
     .Does(() =>
 {

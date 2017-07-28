@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Socket.IO.Client</id>
-        <version>0.8.3</version>
+        <version>0.9.0</version>
         <title>Socket.IO Client for Android</title>
         <authors>Matthew Leibowitz</authors>
         <licenseUrl>https://raw.githubusercontent.com/mattleibow/Socket.IO.Client/master/LICENSE</licenseUrl>
@@ -15,7 +15,7 @@
         <copyright>Automattic</copyright>
         <tags></tags>
         <dependencies>
-            <dependency id="Engine.IO.Client" version="0.8.3" />
+            <dependency id="Engine.IO.Client" version="0.9.0" />
         </dependencies>
     </metadata>
     <files>

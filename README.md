@@ -1,6 +1,6 @@
 # Socket.IO Client
 
-[![Build status](https://ci.appveyor.com/api/projects/status/qh8lw8q3btg0ia7g/branch/master?svg=true)](https://ci.appveyor.com/project/mattleibow/socket-io-client/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/qh8lw8q3btg0ia7g/branch/master?svg=true)](https://ci.appveyor.com/project/mattleibow/socket-io-client/branch/master) | [![Build Status](https://www.bitrise.io/app/6f5d2aac969aabb3/status.svg?token=U7ApcfeTp7P7znGXI2WrZg&branch=master)](https://www.bitrise.io/app/6f5d2aac969aabb3)
 
 Xamarin bindings for the Socket.IO Clients. Socket.IO for Xamarin
 

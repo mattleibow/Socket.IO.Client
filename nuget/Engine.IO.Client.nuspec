@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Engine.IO.Client</id>
-        <version>0.9.0</version>
+        <version>1.0.0</version>
         <title>Engine.IO Client for Android</title>
         <authors>Matthew Leibowitz</authors>
         <licenseUrl>https://raw.githubusercontent.com/mattleibow/Socket.IO.Client/master/LICENSE</licenseUrl>
@@ -13,7 +13,7 @@
         <summary>The Engine.IO Client Library for Android</summary>
         <releaseNotes></releaseNotes>
         <copyright>Automattic</copyright>
-        <tags></tags>
+        <tags>xamairn,android,xamarin.android,monodroid,websocket,socket.io,engine.io</tags>
         <dependencies>
             <dependency id="Square.OkHttp3" version="3.8.1" />
         </dependencies>

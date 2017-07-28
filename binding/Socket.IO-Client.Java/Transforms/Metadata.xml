@@ -12,9 +12,6 @@
   <attr path="/api/package[@name='io.socket.client']" name="managedName">SocketIO.Client</attr>
   <attr path="/api/package[@name='io.socket.parser']" name="managedName">SocketIO.Parsers</attr>
 
-  <remove-node path="/api/package[@name='io.socket.client']/class[@name='Manager.Engine']" />
-  <remove-node path="/api/package[@name='io.socket.parser']/class[@name='Parser.BinaryReconstructor']" />
-  
   <attr path="/api/package[@name='io.socket.client']/class[@name='Manager.ReadyState']" name="managedName">ManagerReadyState</attr>
 
   <attr path="/api/package[@name='io.socket.client']/class[@name='Socket']/method[@name='connected']" name="managedName">IsConnected</attr>

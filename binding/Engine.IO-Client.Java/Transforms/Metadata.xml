@@ -17,8 +17,6 @@
   <attr path="/api/package[@name='io.socket.utf8']" name="managedName">EngineIO</attr>
   <attr path="/api/package[@name='io.socket.yeast']" name="managedName">EngineIO</attr>
 
-  <remove-node path="/api/package[@name='io.socket.emitter']/class[@name='Emitter.OnceListener']" />
-
   <attr path="/api/package[@name='io.socket.engineio.client']/class[@name='Socket.ReadyState']" name="managedName">SocketReadyState</attr>
   <attr path="/api/package[@name='io.socket.engineio.client']/class[@name='Transport.ReadyState']" name="managedName">TransportReadyState</attr>
   <attr path="/api/package[@name='io.socket.engineio.client.transports']/class[@name='Polling']/field[@name='NAME']" name="managedName">TransportName</attr>
